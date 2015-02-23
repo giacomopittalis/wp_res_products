@@ -131,7 +131,6 @@ function runergosum_store_register_settings() {
 
 function runergosum_sanitize_options($options) {
 
-    $options['show_inventory'] = (!empty($options['show_inventory']) ) ? sanitize_text_field($options['show_inventory']) : '';
     $options['currency_sign'] = (!empty($options['currency_sign']) ) ? sanitize_text_field($options['currency_sign']) : '';
 
     return $options;
